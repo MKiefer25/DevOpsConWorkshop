@@ -15,7 +15,7 @@ jobs:
     
     steps:
       - run: echo "Job was triggered by ${{github.eventName}}"
-      - run: echo "The name of the branch is ${{}github.ref}"
+      - run: echo "The name of the branch is ${{github.ref}}"
       
       - name: Checkout
         uses: actions/checkout@v3.5.3
