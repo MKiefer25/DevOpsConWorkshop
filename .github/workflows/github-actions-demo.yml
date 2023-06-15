@@ -1,6 +1,6 @@
 name: GitHub Actions Demo
 
-on:
+on: 
   push:
     branches: [main]
     paths-ignore: [.github/**]
@@ -25,4 +25,5 @@ jobs:
       - name: List all files in the repo
         run: |
           echo "Repo has the following files:"
-          tree 
+          tree
+      
